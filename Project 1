@@ -1,0 +1,236 @@
+
+//Github : https://github.com/AtharvaDeshpande7/C-Project1.git
+#include<stdio.h>
+#include<conio.h>
+void add(int,int);
+void sub(int,int);
+void mul(int,int);
+void div(int,int);
+void fact(int);
+void tab(int);
+void eoo(int);
+void pon(int);
+void gos(int,int);
+void vowels(char);
+void main()
+{
+int c1,c2,c3;
+char n;
+clrscr();
+printf("\n Hello there, may I know your good name : ");
+scanf("%s",&n);
+printf("\n Enter 1 for C programme theory");
+printf("\n Enter 2 for C programmes");
+printf("\n Enter your choice : ",n);
+scanf("%d",&c1);
+if(c1==1)
+{printf("\n 1. Operators");
+printf("\n 2. Conditional Statements");
+printf("\n 3. Looping");
+printf("\n 4. Array");
+printf("\n 5. Function");
+printf("\n 6. Structure");
+printf("\n 7. File Handling");
+printf("\n Enter your Choice : ");
+scanf("%d",&c2);
+switch(c2)
+{
+case 1:
+{
+printf("\n OPERATORS: \n\nThe C language supports a rich set of built-in operators. \n An operator is a symbol that tells the compiler to perform a certain mathematical or logical operations, based on the values provided to the operator.");
+printf("\n C operators can be classified into the following types:\n\n 1. Arithmetic operators,\n 2. Relational operators,\n 3. Logical operators,\n Bitwise operators,\n 4. Assignment operators,\n 5. Conditional operators,\n 6. Special operators.");
+break;
+}
+case 2:
+{
+printf("\n CONDITIONAL STATEMENTS : \n\nConditional Statements in C programming are used to make decisions based on the conditions.\n Conditional statements execute sequentially when there is no condition around the statements.\nIt is also called as branching as a program decides which statement to execute based on the result of the evaluated condition.");
+printf("\n Conditional statements can be classified into following types:\n\n 1. If statement,\n 2. Relational Operators,\n 3. If-Else statement,\n 4. Conditional Expressions,\n 5. Nested If-else Statements,\n 6. Nested Else-if statements.");
+break;
+}
+case 3:
+{
+printf("\n LOOPING: \n\nLooping Statements in C execute the sequence of statements many times until the stated condition becomes false. \nA loop in C consists of two parts, a body of a loop and a control statement. \nThe control statement is a combination of some conditions that direct the body of the loop to execute until the specified condition becomes false. \nThe purpose of the C loop is to repeat the same code a number of times.");
+printf("\n  Looping statement in C is classified into two types: \n\n1. The while loop,\n 2. The do-while loop,\n 3. The for loop.");
+break;
+}
+case 4:
+{
+printf("\n ARRAY : \n\nAn array is used to store a collection or series of elements. These elements will be of the same type.");
+break;
+}
+case 5:
+{
+printf("\n FUNCTION : \n\nFunction in C programming is a reusable block of code that makes a program easier to understand, test and can be easily modified without changing the calling program.\nFunctions divide the code and modularize the program for better and effective results.");
+printf("\nIn C programming, functions are divided into two types:\n\n 1. Library functions,\n 2. User-defined functions");
+printf("\nC programming functions are divided into three activities such as,\n\n 1. Function declaration,\n 2. Function definition,\n 3. Function call");
+break;
+}
+case 6:
+{
+printf("\n STRUCTURE : \n\nStructure is a user-defined data type in C programming language that combines logically related data items of different data types together.\nAll the structure elements are stored at contiguous memory locations. \nStructure type variable can store more than one data item of varying data types under one name.");
+break;
+}
+case 7:
+{
+printf("\n FILE HANDLING : \n\nFile Handling is the storing of data in a file using a program. \nIn C programming language, the programs store results, and other data of the program to a file using file handling in C. \nAlso, we can extract/fetch data from a file to work with it in the program.");
+printf("\n The operations that you can perform on a File in C are :\n\n 1. Creating a new file,\n 2. Opening an existing file,\n 3. Reading data from an existing file,\n 4. Writing data to a file,\n 5. Moving data to a specific location on the file,\n 6. Closing the file");
+break;
+}
+default:
+{
+printf("Given value is false");
+break;
+}
+}
+}
+if(c1==2)
+{
+printf("\n 1. Addition");
+printf("\n 2. Substraction");
+printf("\n 3. Multiplication");
+printf("\n 4. Division");
+printf("\n 5. Factorial");
+printf("\n 6. Table");
+printf("\n 7. Even or Odd");
+printf("\n 8. Positive or Negative");
+printf("\n 9. Greater or Smaller");
+printf("\n 10. Vowels");
+printf("\n Enter your choice : ");
+scanf("%d",&c1);
+
+switch(c1)
+{
+int x,y;
+char c,d;
+case 1:
+add(x,y);
+break;
+case 2:
+sub(x,y);
+break;
+case 3:
+mul(x,y);
+break;
+case 4:
+div(x,y);
+break;
+case 5:
+fact(x);
+break;
+case 6:
+tab(x);
+break;
+case 7:
+eoo(x);
+break;
+case 8:
+pon(x);
+break;
+case 9:
+gos(x,y);
+break;
+case 10:
+vowels(c);
+break;
+default:
+printf("The given value is invalid");
+break;}
+}
+getch();
+}
+void add(int a, int b)
+{
+printf("\n Enter two values : ");
+scanf("\n%d%d",&a,&b);
+printf("\n The addition is %d",a+b);
+}
+
+void sub(int a, int b)
+{
+printf("\n Enter two values : ");
+scanf("\n%d%d",&a,&b);
+printf("\n The substraction is %d",a-b);
+}
+
+void mul(int a, int b)
+{
+printf("\n Enter two values : ");
+scanf("\n%d%d",&a,&b);
+printf("\n The Multiplication is %d",a*b);
+}
+
+void div(int a, int b)
+{
+printf("Enter two values : ");
+scanf("\n%d%d",&a,&b);
+printf("\n The division is %d",a/b);
+}
+
+void fact(int a)
+{
+int i=1,f=1;
+printf("Enter a number for factorial : ");
+scanf("%d",&a);
+for(i=1;i<=a;i++)
+{f=f*i;}
+printf("The factorial is %d",f);
+}
+
+void tab(int a)
+{
+int i;
+printf("Enter a Number : ");
+scanf("%d",&a);
+for(i=1;i<=10;i++)
+	{
+		printf("\n%d",a*i);
+	}
+}
+
+void eoo(int a)
+{
+printf("Enter a value : ");
+scanf("%d",&a);
+if(a%=0)
+{
+printf("\n The given value is Even");
+}
+else
+{
+printf("\n The given value is Odd");}
+}
+
+void pon(int a)
+{
+printf("Enter a value : ");
+scanf("%d",&a);
+if(a>=0)
+{printf("\n The given value is Positive");}
+if(a==0)
+{printf("\n The given value is Zero");}
+if(a<=0)
+{printf("\n The given value is Negative");}
+}
+
+void gos(int g, int s)
+{
+printf("Enter two values for : ");
+scanf("%d%d",&g,&s);
+if(g>s)
+{printf("\n The %d is Greater than %d",g,s);}
+if(g<s)
+{printf("\n The %d is Less than %d",g,s);}
+if(g==s)
+{printf("Both values %d and %d are Equal",g,s);}
+}
+
+void vowels(char v)
+{
+printf("Enter a character : ");
+scanf("%s",&v);
+
+if(v=='a'||v=='A'||v=='e'||v=='E'||v=='i'||v=='I'||v=='o'||v=='O'||v=='u'||v=='U')
+{
+printf("%c",v);
+}
+}
